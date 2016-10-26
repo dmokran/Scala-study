@@ -28,3 +28,21 @@ tmap += (3 -> 'c')
 println(tmap)
 4.->('d')
 println("ab \n cd \n")
+()
+def greet() { println("Hi")}
+greet() == ()
+
+var alpha = 3
+(alpha = 4) != ()
+
+val filesHere = new java.io.File(".").listFiles()
+for (file <- filesHere if file.getName.endsWith(".dll")
+                      if file.getName.startsWith("d")) println(file)
+val tuples = for {i <- 1 to 3
+     j <- 4 to 6
+     z = i+j}
+  yield (i, j, z)
+//  println("i =" + i + " j = " + j + " z = " + z)
+tuples.foreach(println)
+
+
