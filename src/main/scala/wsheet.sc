@@ -7,6 +7,7 @@ str.length
 str.apply(0)
 str.update(1,5)
 str(0)
+()
 
 val bc = List.apply('b', 'c')
 val a = List('a')
